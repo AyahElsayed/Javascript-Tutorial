@@ -9,4 +9,11 @@ data types
 
 objects[abject - function - array - date]
 
-/************************/
+/********************************************************/
+
+convert strings to numbers
+==========================
+# + , - , if there is string return Nan
+# Number('') , if there is string return Nan
+# parseInt() if the number at first of statements ,with neglect strings 
+# parseFloat() return floats with neglect strings if the number at first of statements
