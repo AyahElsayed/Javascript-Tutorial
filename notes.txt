@@ -26,4 +26,31 @@ convert numbers to strings
 # number.toString()
 
 /********************************************************/
+Strings 
+=======
+repeat
+length
+var[index]
+charAt(index)
+indexOf(‘a’) // for search
+lastIndexOf(‘a’)
+lastIndexOf(“a”, 6)
+slice(0 , 5)
+splite(‘ ‘)
+
+cut stings
+==========
+
+    slice(start ,  end) // can use negative numbers
+    subString(start ,  end) //can't use negative numbers
+    subStr(start ,  length)
+
+string search
+============
+
+    indexOf(character,  search location)
+    lastIndexOf(character,  search location)
+    includes(character,  search location)
+    startsWith(character,  search location)
+    endsWith(character,  length)
 
