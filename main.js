@@ -20,3 +20,11 @@ console.log(parseInt('4 Aya')) //4
 console.log(parseInt('ghg 4 Aya')) //NaN
 console.log(parseInt('4.5')) //4
 console.log(parseFloat('4.5')) //4.5
+
+// ***************************************
+
+// convert numbers to strings
+console.log(typeof String(10)) //string
+// console.log(typeof 100.toString()) //error
+console.log(typeof (100).toString()) //string
+console.log(typeof 100..toString()) //string

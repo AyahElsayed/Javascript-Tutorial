@@ -17,3 +17,13 @@ convert strings to numbers
 # Number('') , if there is string return Nan
 # parseInt() if the number at first of statements ,with neglect strings 
 # parseFloat() return floats with neglect strings if the number at first of statements
+
+/********************************************************/
+
+convert numbers to strings
+==========================
+# string()
+# number.toString()
+
+/********************************************************/
+
