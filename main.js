@@ -135,3 +135,28 @@ console.log(arr1.join('-')) //ahmed-mona-mazen
 // === compare values and data types
 console.log(5 == '5') //true
 console.log(5 === '5') //false
+
+
+// *****************************
+// continue and breake in loops
+let users = ['ali' , 'aya' , 'ahmed' , 1,2,3, 'gamal']
+for(let i = 0; i< users.length ; i++){
+  if(typeof users[i] == 'number'){
+    continue; // استبعاد
+  }
+  console.log(users[i])
+  // ali
+  // aya
+  // ahmed
+  // gamal
+}
+console.log('----------')
+for(let i = 0; i< users.length ; i++){
+  console.log(users[i])
+  if(users[i] == 'ahmed'){
+    break; // stop
+  }
+  // ali
+  // aya
+  // ahmed
+}
