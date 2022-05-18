@@ -69,3 +69,62 @@ console.log(x.lastIndexOf('a',9)) //8
 console.log(x.lastIndexOf('z',9)) //-1 not found
 console.log(x.includes('a',9)) //true
 
+// ***************************************
+
+// Arrays
+
+// nested array
+let arr = [1,2,3,[4,5,6,[7,8,9]]]
+console.log(arr[3][3][1]) // 8
+
+let names = ['aya', 'ali',',mai']
+// add at the end of array
+names.push('gamal')
+console.log(names) // ['aya', 'ali', ',mai', 'gamal']
+// add at the first of array
+names.unshift('ahmed')
+console.log(names) // ['ahmed', 'aya', 'ali', ',mai', 'gamal']
+
+// remove from the first 
+names.shift() 
+console.log(names) // ['aya', 'ali', ',mai', 'gamal']
+
+// remove from the end
+names.pop()
+console.log(names) // ['aya', 'ali', ',mai']
+
+// remove item inside array
+names.splice(1,1) // splice(start index , number of items , items if want to add)
+console.log(names) // ['aya', ',mai']
+names.push('gamal')
+names.push('ahmed')
+console.log(names) // ['aya', ',mai', 'gamal', 'ahmed']
+
+names.splice(2,1 ,'ali') 
+console.log(names) //  ['aya', ',mai', 'ali', 'ahmed']
+
+names.splice(1,0 ,'mona') 
+console.log(names) //  ['aya', 'mona', ',mai', 'ali', 'ahmed']
+
+// names.slice(0,2) // slice(start,end)
+console.log(names.slice(0,2)) // ['aya', 'mona']
+console.log(names) //['aya', 'mona', ',mai', 'ali', 'ahmed']
+
+// reverce and sort array
+console.log(names.reverse()) // ['ahmed', 'ali', ',mai', 'mona', 'aya']
+
+console.log(names.sort()) // [',mai', 'ahmed', 'ali', 'aya', 'mona']
+
+// concat and join in array
+let arr1 = ['ahmed' , 'mona' , 'mazen']
+let arr2 = ['aya' , 'mai' , 'ali']
+
+// arr1 = arr1 + arr2
+// arr1 += arr2
+// console.log(arr1) // ahmed,mona,mazenaya,mai,ali
+// console.log(typeof arr1) //string
+
+console.log(arr1.concat(arr2)) // ['ahmed', 'mona', 'mazen', 'aya', 'mai', 'ali']
+console.log(arr1.join()) //ahmed,mona,mazen
+console.log(arr1.join(' ')) //ahmed mona mazen
+console.log(arr1.join('-')) //ahmed-mona-mazen

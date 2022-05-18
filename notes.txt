@@ -54,3 +54,11 @@ string search
     startsWith(character,  search location)
     endsWith(character,  length)
 
+
+Array search
+============
+
+    indexOf(character,  search location) // -1 if not found
+    lastIndexOf(character,  search location)
+    includes(character,  search location) // return true or false 
+
