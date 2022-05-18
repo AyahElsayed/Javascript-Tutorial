@@ -62,3 +62,28 @@ Array search
     lastIndexOf(character,  search location)
     includes(character,  search location) // return true or false 
 
+
+conditions
+==========
+    if(condition){
+        code if true
+    }else{
+        code if false
+    }
+
+    else if{
+        in case more options
+    }
+    * another way to write
+    condition ? true : false
+
+    switch(expression){
+        case 1:
+            code;
+            break;
+        case 2:
+            code;
+            break;
+        default:
+            default code
+    }

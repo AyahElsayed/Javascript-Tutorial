@@ -128,3 +128,10 @@ console.log(arr1.concat(arr2)) // ['ahmed', 'mona', 'mazen', 'aya', 'mai', 'ali'
 console.log(arr1.join()) //ahmed,mona,mazen
 console.log(arr1.join(' ')) //ahmed mona mazen
 console.log(arr1.join('-')) //ahmed-mona-mazen
+
+// *****************************
+
+// == compare values
+// === compare values and data types
+console.log(5 == '5') //true
+console.log(5 === '5') //false
