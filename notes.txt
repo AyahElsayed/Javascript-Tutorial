@@ -87,3 +87,16 @@ conditions
         default:
             default code
     }
+
+
+// *****************************
+
+//hoisting
+when I write :
+var x = 10;
+
+JS makes it as:
+var x ; // decleration at the top of scope // meaning of hoistion
+x=10
+
+let => no hoisting

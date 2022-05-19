@@ -160,3 +160,22 @@ for(let i = 0; i< users.length ; i++){
   // aya
   // ahmed
 }
+
+
+// *****************************
+
+//hoisting
+console.log(y) // undefined 
+var y = 10;
+
+// ------
+console.log(hello()) //1
+
+function hello(){
+  return 1; //decleration function move to the top of scope
+}
+
+let hello = function(){
+  return 1; // expresion function  no hoisting
+}
+
