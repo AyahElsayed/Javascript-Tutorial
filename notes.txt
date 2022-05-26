@@ -100,3 +100,17 @@ var x ; // decleration at the top of scope // meaning of hoistion
 x=10
 
 let => no hoisting
+
+// *****************************
+local scope
+===========
+function(){}
+if(){}
+for(){}
+while(){}
+but var in this => global value beacuse hoisting
+we can use let to be local value
+
+//self invoked function
+( function(){})();
+
