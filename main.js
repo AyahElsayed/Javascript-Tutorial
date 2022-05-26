@@ -8,11 +8,11 @@ console.log('5' ** '4') // 625
 
 console.log('5' / 'ahmed') // Nan / convert ahmed to number
 
-console.log(  +'5' +  +'4'  ) // 9 / when add + before the number 
+console.log(+'5' + +'4') // 9 / when add + before the number 
 // js convert conct to add
 
 
-console.log( typeof +'5') // number
+console.log(typeof +'5') // number
 
 console.log(+'4') // 4 number
 console.log(+'4 Aya') // NaN
@@ -46,7 +46,7 @@ console.log(name.indexOf('l')) //1
 let x = 'I love javaScript'
 console.log(x.slice()) //I love javaScript
 console.log(x.slice(2)) // love javaScript
-console.log(x.slice(0,4)) //I lo
+console.log(x.slice(0, 4)) //I lo
 
 console.log(x.split()) // ['I love javaScript']
 console.log(x.split('')) // ['I', ' ', 'l', 'o', 'v', 'e', ' ', 'j', 'a', 'v', 'a', 'S', 'c', 'r', 'i', 'p', 't']
@@ -59,25 +59,25 @@ console.log(x.slice()) //I love javaScript
 console.log(x.substring()) //I love javaScript
 console.log(x.substr()) //I love javaScript
 
-console.log(x.slice(2,6)) //love
-console.log(x.substring(2,6)) //love
-console.log(x.substr(2,6)) //love j
+console.log(x.slice(2, 6)) //love
+console.log(x.substring(2, 6)) //love
+console.log(x.substr(2, 6)) //love j
 
-console.log(x.indexOf('a',9)) //10
-console.log(x.indexOf('z',9)) //-1 not found
-console.log(x.lastIndexOf('a',9)) //8
-console.log(x.lastIndexOf('z',9)) //-1 not found
-console.log(x.includes('a',9)) //true
+console.log(x.indexOf('a', 9)) //10
+console.log(x.indexOf('z', 9)) //-1 not found
+console.log(x.lastIndexOf('a', 9)) //8
+console.log(x.lastIndexOf('z', 9)) //-1 not found
+console.log(x.includes('a', 9)) //true
 
 // ***************************************
 
 // Arrays
 
 // nested array
-let arr = [1,2,3,[4,5,6,[7,8,9]]]
+let arr = [1, 2, 3, [4, 5, 6, [7, 8, 9]]]
 console.log(arr[3][3][1]) // 8
 
-let names = ['aya', 'ali',',mai']
+let names = ['aya', 'ali', ',mai']
 // add at the end of array
 names.push('gamal')
 console.log(names) // ['aya', 'ali', ',mai', 'gamal']
@@ -86,7 +86,7 @@ names.unshift('ahmed')
 console.log(names) // ['ahmed', 'aya', 'ali', ',mai', 'gamal']
 
 // remove from the first 
-names.shift() 
+names.shift()
 console.log(names) // ['aya', 'ali', ',mai', 'gamal']
 
 // remove from the end
@@ -94,20 +94,20 @@ names.pop()
 console.log(names) // ['aya', 'ali', ',mai']
 
 // remove item inside array
-names.splice(1,1) // splice(start index , number of items , items if want to add)
+names.splice(1, 1) // splice(start index , number of items , items if want to add)
 console.log(names) // ['aya', ',mai']
 names.push('gamal')
 names.push('ahmed')
 console.log(names) // ['aya', ',mai', 'gamal', 'ahmed']
 
-names.splice(2,1 ,'ali') 
+names.splice(2, 1, 'ali')
 console.log(names) //  ['aya', ',mai', 'ali', 'ahmed']
 
-names.splice(1,0 ,'mona') 
+names.splice(1, 0, 'mona')
 console.log(names) //  ['aya', 'mona', ',mai', 'ali', 'ahmed']
 
 // names.slice(0,2) // slice(start,end)
-console.log(names.slice(0,2)) // ['aya', 'mona']
+console.log(names.slice(0, 2)) // ['aya', 'mona']
 console.log(names) //['aya', 'mona', ',mai', 'ali', 'ahmed']
 
 // reverce and sort array
@@ -116,8 +116,8 @@ console.log(names.reverse()) // ['ahmed', 'ali', ',mai', 'mona', 'aya']
 console.log(names.sort()) // [',mai', 'ahmed', 'ali', 'aya', 'mona']
 
 // concat and join in array
-let arr1 = ['ahmed' , 'mona' , 'mazen']
-let arr2 = ['aya' , 'mai' , 'ali']
+let arr1 = ['ahmed', 'mona', 'mazen']
+let arr2 = ['aya', 'mai', 'ali']
 
 // arr1 = arr1 + arr2
 // arr1 += arr2
@@ -139,9 +139,9 @@ console.log(5 === '5') //false
 
 // *****************************
 // continue and breake in loops
-let users = ['ali' , 'aya' , 'ahmed' , 1,2,3, 'gamal']
-for(let i = 0; i< users.length ; i++){
-  if(typeof users[i] == 'number'){
+let users = ['ali', 'aya', 'ahmed', 1, 2, 3, 'gamal']
+for (let i = 0; i < users.length; i++) {
+  if (typeof users[i] == 'number') {
     continue; // استبعاد
   }
   console.log(users[i])
@@ -151,9 +151,9 @@ for(let i = 0; i< users.length ; i++){
   // gamal
 }
 console.log('----------')
-for(let i = 0; i< users.length ; i++){
+for (let i = 0; i < users.length; i++) {
   console.log(users[i])
-  if(users[i] == 'ahmed'){
+  if (users[i] == 'ahmed') {
     break; // stop
   }
   // ali
@@ -171,11 +171,43 @@ var y = 10;
 // ------
 console.log(hello()) //1
 
-function hello(){
-  return 1; //decleration function move to the top of scope
+function hello() {
+  return '1'; //decleration function move to the top of scope
 }
 
-let hello = function(){
-  return 1; // expresion function  no hoisting
+let hello1 = function () {
+  return '1'; // expresion function  no hoisting
 }
 
+
+// *****************************
+
+//global
+//can use any where
+var g = 10;
+
+console.log(g) //10
+
+//local
+function hello2() {
+  var l = 5;
+  console.log(g) //10
+  console.log(l) //5
+}
+// console.log(l) // error not defined
+
+// *****************************
+// This
+
+let user = {
+  // property     
+  name: 'abdelrahman',
+  // method    
+  getName: function () {
+    return this.name;
+    // == return user.name
+  },
+};
+
+let z = this;
+console.log(z) // window

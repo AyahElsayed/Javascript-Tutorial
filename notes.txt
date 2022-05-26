@@ -114,3 +114,19 @@ we can use let to be local value
 //self invoked function
 ( function(){})();
 
+// *****************************
+
+this keyword
+============
+Indicates the object to which it belongs
+
+1- Methods
+    this => Indicates to the owner object
+2- alone
+    this => Indicates to window
+3- normal function 
+    this => Indicates to window
+4- function in strict mode
+    this => Indicates to undefined
+5- event
+    this => Indicates to element has event
